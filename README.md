@@ -1,6 +1,70 @@
-# dondurme-animasyonu-2
-- first
-- second
-- third
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>rastgele</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    .container{
+        border-radius: 50%;
+        background-image: url(../resim.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+     height: 500px;
+     width: 500px;
+        object-fit: cover;
+       border: 15px solid  gold;
+       border-bottom: 15px solid aqua;
+      
+       animation: don 6000ms infinite linear;
+       
+      
+      
+    }
+    .box{
+      
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        border-radius: 50%;
+        border: 15px solid aqua;
+        height: 600px;
+     width: 600px;
+     border-top: 15px solid gold;
+     animation: don2 5000ms infinite linear;
+    }
+    @keyframes don2{
+        0%{
+            transform: rotate(-360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+   
+    @keyframes don{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+<body>
+   
+        <div class="box"> 
+            <div class="container">
+        </div>
+        </div>
+   
+   
+</body>
+</html>
 
 
